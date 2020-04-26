@@ -33,10 +33,9 @@ using namespace std;
 //int X[]={1,1,2,2,-1,-1,-2,-2}; //Knights move
 //int Y[]={2,-2,1,-1,2,-2,1,-1}; //Knights move
 /******Always use printf & scanf*******/
-int wt[21],dp[21][1000001]; //cost array stores the values of items...wt array stores the weights of items
-int cap,item,x;    
-vector<ll>v;                       //dp array is for storing the capacities if we include certain objects
-int func(int i,int w)
+int wt[21],dp[21][1000001]; 
+int cap,item,x;               
+int func(int i,int w)   //0/1 knapsack
 {
     int profit1,profit2,result;
     if(dp[i][w]!=-1)
