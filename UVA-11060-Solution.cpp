@@ -69,6 +69,7 @@ void topological_sorting()
    //    }
    // }
    //reverse(ans.begin(), ans.end());
+   //topological sorting in lexicographocal order
    priority_queue<int,vector<int>,greater<int> >pq;
    for(auto i:mpp)
    {
